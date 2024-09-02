@@ -146,7 +146,7 @@
             <div class="sidebar">
     <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
     <a href="{{url('/students')}}"><i class="fas fa-user-graduate"></i> Student</a>
-    <a href="#teacher"><i class="fas fa-chalkboard-teacher"></i> Teacher</a>
+    <a href="{{url('/teachers')}}"><i class="fas fa-chalkboard-teacher"></i> Teacher</a>
     <a href="#courses"><i class="fas fa-book"></i> Courses</a>
     <a href="#enrollment"><i class="fas fa-user-plus"></i> Enrollment</a>
     <a href="#payment"><i class="fas fa-wallet"></i> Payment</a>
