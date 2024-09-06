@@ -3,33 +3,33 @@
 
 <div class="card shadow-lg rounded-lg border-0">
     <div class="card-header bg-primary text-white text-center">
-        <h2 class="mb-0"> Courses Page</h2>
+        <h2 class="mb-0">🎓 Students Page</h2>
     </div>
     <div class="card-body bg-light p-5">
         <form action="{{ url('courses') }}" method="post" class="needs-validation" novalidate>
             {!! csrf_field() !!}
             
             <div class="form-group">
-                <label for="name" class="font-weight-bold">Course Name</label>
-                <input type="text" name="name" id="name" class="form-control form-control-lg rounded-pill" placeholder="Enter courses's name" required>
+                <label for="Name" class="font-weight-bold">Name</label>
+                <input type="text" name="Name" id="Name" class="form-control form-control-lg rounded-pill" placeholder="Enter student's name">
                 <div class="invalid-feedback">
                     Please provide a name.
                 </div>
             </div>
             
             <div class="form-group">
-                <label for="address" class="font-weight-bold">Syllabus</label>
-                <input type="text" name="address" id="address" class="form-control form-control-lg rounded-pill" placeholder="Enter address" required>
+                <label for="Syllabus" class="font-weight-bold">Syllabus</label>
+                <input type="text" name="Syllabus" id="Syllabus" class="form-control" placeholder="Enter Syllabus">
                 <div class="invalid-feedback">
-                    Please provide an address.
+                    Please provide an Syllabus
                 </div>
             </div>
             
             <div class="form-group">
-                <label for="mobile" class="font-weight-bold">Mobile</label>
-                <input type="text" name="mobile" id="mobile" class="form-control form-control-lg rounded-pill" placeholder="Enter mobile number" required>
+                <label for="Duration" class="font-weight-bold">Duration</label>
+                <input type="text" name="Duration" id="Duration" class="form-control form-control-lg rounded-pill" placeholder="Enter Duration" required>
                 <div class="invalid-feedback">
-                    Please provide a mobile number.
+                    Please provide a Duration
                 </div>
             </div>
             

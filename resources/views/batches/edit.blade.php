@@ -7,24 +7,24 @@
   </div>
   <div class="card-body p-4">
       
-      <form action="{{ url('courses/' .$courses->id) }}" method="post">
+      <form action="{{ url('batches/' .$batches->id) }}" method="post">
         {!! csrf_field() !!}
         @method("PATCH")
-        <input type="hidden" name="id" id="id" value="{{$courses->id}}" />
+        <input type="hidden" name="id" id="id" value="{{$batches->id}}" />
 
         <div class="form-group">
           <label for="name" style="font-weight: bold;">Name</label>
-          <input type="text" name="name" id="name" value="{{$courses->name}}" class="form-control" style="border-radius: 10px; padding: 10px; font-size: 16px;">
+          <input type="text" name="name" id="name" value="{{$batches->name}}" class="form-control" style="border-radius: 10px; padding: 10px; font-size: 16px;">
         </div>
 
         <div class="form-group">
-          <label for="Syllabus" style="font-weight: bold;">Syllabus</label>
-          <input type="text" name="Syllabus" id="Syllabus" value="{{$courses->Syllabus}}" class="form-control" style="border-radius: 10px; padding: 10px; font-size: 16px;">
+          <label for="course_id" style="font-weight: bold;">Course ID</label>
+          <input type="text" name="course_id" id="course_id" value="{{$batches->course_id}}" class="form-control" style="border-radius: 10px; padding: 10px; font-size: 16px;">
         </div>
 
         <div class="form-group">
-          <label for="mobile" style="font-weight: bold;">Duration</label>
-          <input type="text" name="mobile" id="Duration" value="{{$courses->Duration}}" class="form-control" style="border-radius: 10px; padding: 10px; font-size: 16px;">
+          <label for="mobile" style="font-weight: bold;">Start Date</label>
+          <input type="date" name="start_date" id="start_date" value="{{$batches->start_date}}" class="form-control" style="border-radius: 10px; padding: 10px; font-size: 16px;">
         </div>
 
         <div class="text-center">

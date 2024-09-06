@@ -148,6 +148,8 @@
     <a href="{{url('/students')}}"><i class="fas fa-user-graduate"></i> Student</a>
     <a href="{{url('/teachers')}}"><i class="fas fa-chalkboard-teacher"></i> Teacher</a>
     <a href="{{url('/courses')}}"><i class="fas fa-book"></i> Courses</a>
+    <a href="{{url('/batches')}}"><i class="fas fa-chalkboard-teacher"></i> Batches</a>
+
     <a href="#enrollment"><i class="fas fa-user-plus"></i> Enrollment</a>
     <a href="#payment"><i class="fas fa-wallet"></i> Payment</a>
 </div>
